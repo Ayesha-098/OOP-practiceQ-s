@@ -23,10 +23,8 @@ class SecureFile:
     def authenticate(self, password):
         if password == self.__password:
             print("Access granted.")
-            return True
         else:
             print("Access denied.")
-            return False
 
 file = SecureFile("project.docx", "120", "secret123")
 print(file.get_file_info())  
